@@ -103,7 +103,7 @@ def test_create_payment(address, settings):
         "customer_ip_address": "127.0.0.1",
     }
     payment = create_payment(**data)
-    assert payment.gateway == "Dummy"
+    assert payment.gateway == "Break Test"
 
     same_payment = create_payment(**data)
     assert payment == same_payment
